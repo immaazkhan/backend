@@ -1,0 +1,27 @@
+GET http://localhost:3001/todos HTTP/1.1
+
+###
+
+POST http://localhost:3001/todo/new
+Content-Type: application/json
+
+{
+	"text": "hi this is maazz khan"
+}
+
+###
+
+DELETE http://localhost:3001/todo/delete/60e585eb6177f95ff0574326
+
+###
+
+GET http://localhost:3001/todo/complete/637787fe7762939bbbba68bf
+
+###
+
+PUT http://localhost:3001/todo/update/637788a0c353cf1f82cf8a3b
+Content-Type: application/json
+
+{
+	"text": "Go Shopping for Milk"
+}
